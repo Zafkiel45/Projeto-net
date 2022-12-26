@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#menu-container {
+    background-color: rgba(5, 110, 230, 0.899);
+    padding: 20px;
+    color: white;
+}
+
+#menu-list {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+#principal {
+    display: flex;
+    background-image: url(../image/—Pngtree—abstract\ background\ technology\ of\ data_1316468.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.svg-rede {
+    width: 350px;
+    height: 350px;
+}
+
+.title {
+    width: 400px;
+    height: auto;
+}
+
+.title-main {
+    font-size: 3em;
+    color: white;
+}
+
+.texto {
+    position: relative;
+    color: rgb(162, 161, 161);
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.svg-banco {
+    width: 50px;
+    height: 50px;
+    filter: invert(70%);
+}
+
+.svg-nuvem {
+    height: 50px;
+    width: 50px;
+    filter: invert(70%);
+}
+
+.svg-speed {
+    height: 50px;
+    width: 50px;
+    filter: invert(70%);
+}
+
+.item-complemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#complemento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 1.25em; 
+    color: white;
+}
