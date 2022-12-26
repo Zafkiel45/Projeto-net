@@ -15,6 +15,7 @@
     display: flex;
     gap: 26px;
     list-style: none;
+    align-items: baseline;
 }
 
 .logo {
@@ -87,4 +88,37 @@
     background-color: cornflowerblue;
     padding: 1.25em; 
     color: white;
+}
+
+.premimum-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.about {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+#rodape {
+    background-color:rgba(2, 32, 66, 0.899);
+    color: white;
+    padding: 1em 0px;
+}
+
+.rodape-list {
+    display: flex;
+    gap: 26px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.rodape-logo {
+    font-size: 2em;
+}
+
+.copy {
+    font-style: italic;
+    font-size: 14px;
 }
