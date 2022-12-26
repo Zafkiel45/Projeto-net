@@ -22,6 +22,12 @@
     flex-grow: 1;
 }
 
+.item:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
 #principal {
     display: flex;
     background-image: url(../image/—Pngtree—abstract\ background\ technology\ of\ data_1316468.png);
@@ -79,13 +85,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #complemento {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(to right, rgb(6, 6, 84), rgb(6, 6, 108), rgb(7, 7, 121));
     padding: 1.25em; 
     color: white;
 }
@@ -98,6 +109,7 @@
 .about {
     margin: 5px 0px 0px 0px;
     text-align: center;
+    color: darkgrey
 }
 
 #rodape {
@@ -121,4 +133,11 @@
 .copy {
     font-style: italic;
     font-size: 14px;
+}
+
+.explicação {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(107, 107, 107)
 }
