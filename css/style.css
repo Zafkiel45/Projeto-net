@@ -6,9 +6,10 @@
 }
 
 #menu-container {
-    background-color: rgba(5, 110, 230, 0.899);
+    background-image: linear-gradient(to right, rgb(5, 5, 74), rgb(4, 4, 92), rgb(6, 6, 101));
     padding: 20px;
     color: white;
+    border-bottom: 2px solid white;
 }
 
 #menu-list {
@@ -140,4 +141,21 @@
     text-align: center;
     padding: 10px;
     color: rgb(107, 107, 107)
+}
+
+.item-complemento {
+    opacity: 0;
+    animation: appear 3s forwards;
+    mix-blend-mode: normal;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
