@@ -60,7 +60,6 @@
     color: rgb(162, 161, 161);
     text-align: justify;
     margin-top: 5%;
-    margin-left: 5%;
 }
 
 .svg-banco {
@@ -159,3 +158,93 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 800px) {
+    
+    #principal {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../image/—Pngtree—abstract\ background\ technology\ of\ data_1316468.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 600px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+    .svg-rede {
+        width: 330px;
+        height: 330px;
+}
+
+    .title {
+        order: -1;
+    }
+
+    .title-main {
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px){
+    #complemento {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item-complemento {
+        flex-direction: column;
+        width: 500px;
+        height: 250px;
+    }
+    
+}
+
+@media (max-width: 536px){
+    .item-complemento {
+        width: 400px;
+    }
+}
+
+@media (max-width: 470px){
+    .svg-rede {
+        width: 300px;
+        height: 300px;
+    }
+
+    .title-main {
+        font-size: 2em;
+    }
+
+    .texto {
+        font-size: 0.87em;
+    }
+}
+
+@media (max-width: 420px){
+
+    .title {
+        width: 300px;
+    }
+
+    .item-complemento {
+        width: 300px;
+    }
+
+    .rodape-list {
+        flex-direction: column;
+    }
+
+    .copy {
+        order: 2;
+    }
+
+    .rodape-logo {
+        order: -1;
+    }
+
+    .contato {
+        order: 1;
+    }
+}   
