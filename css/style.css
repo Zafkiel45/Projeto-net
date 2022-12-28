@@ -148,6 +148,10 @@
     mix-blend-mode: normal;
 }
 
+#icon {
+    display: none;
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
@@ -224,6 +228,18 @@
 
 @media (max-width: 420px){
 
+    #icon {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+        margin: 5px;
+    }
+
     .title {
         width: 300px;
     }
@@ -246,5 +262,17 @@
 
     .contato {
         order: 1;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .item {
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: rgb(0, 119, 255);
     }
 }   
