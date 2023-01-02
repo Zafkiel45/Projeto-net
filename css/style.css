@@ -224,6 +224,14 @@
     .texto {
         font-size: 0.87em;
     }
+
+    .item {
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: rgba(0, 119, 255, 0);
+    }
 }
 
 @media (max-width: 420px){
