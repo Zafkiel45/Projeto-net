@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@
     gap: 26px;
     list-style: none;
     align-items: baseline;
-}
+} */
 
 .logo {
     flex-grow: 1;
@@ -31,7 +31,6 @@
 
 #principal {
     display: flex;
-    background-image: url(../image/—Pngtree—abstract\ background\ technology\ of\ data_1316468.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 600px;

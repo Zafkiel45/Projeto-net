@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#principal {
+  background-image: url(../image/gradient.png);
+}
+
+#header {
+  background-color: #081C4A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+#header #list-header {
+  list-style: none;
+  display: flex;
+  gap: 1.25em;
+  align-items: center;
+}
+#header #list-header .item-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+#header #list-header .svg-list {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+#header .svg {
+  width: 20px;
+  height: 20px;
+}
+#header #logo-header {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=import.css.map */

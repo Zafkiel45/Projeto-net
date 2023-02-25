@@ -1,0 +1,39 @@
+#header {
+    background-color: $color-1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    #list-header {
+        list-style: none;
+        display: flex;
+        gap: 1.25em;
+        align-items: center;
+
+        .item-header {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .svg-list {
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #logo-header {
+        width: 30px;
+        height: 30px;
+    }
+}

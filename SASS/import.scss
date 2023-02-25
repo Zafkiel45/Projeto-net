@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#principal {
+    background-image: url(../image/gradient.png);
+}
+
+//Variáveis 
+
+$color-1: #081C4A;
+$color-2: #153486;
+$color-3: #284878;
+$color-4: #fff;
+
+//Mexin
+
+@import 'header';
