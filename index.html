@@ -11,35 +11,47 @@
     <script src="JavaScript/script.js" defer></script>
 </head>
 <body>
-    <!-- <header id="menu-container"> 
-        <span onclick="clicou()" id="icon" class="material-symbols-outlined">menu</span>
-        <nav id="menu">
-            <ol id="menu-list">
-                <li class="logo">LOGO</li>
-                <li class="item">Premium <img src="SVG/premium.svg" alt="coroa-premium" class="premimum-svg"> </li>
-                <li class="item">Contato</li>
-                <li class="item">Sobre</li>
-            </ol>
-        </nav>
-    </header> -->
     <header id="header">
+        <button id="next">
+                <img src="SVG/list.svg" alt="" class="svg-prev">
+        </button>
         <div>
             <img src="SVG/coffe-logo.svg" alt="" id="logo-header">
         </div>
         <div id="itens-header">
             <ul id="list-header">
-                <li class="item-header">
+                <li class="item-header" id="nuvem">
                     <img src="SVG/clound.svg" alt="" class="svg">
                     Cloud Storage
+                    <!-- Lista hidden -->
+                    <ul id="cloud_storage_list">
+                        <li class="item-cloud">Plano Básico</li>
+                        <hr>
+                        <li class="item-cloud">Plano Vitalício</li>
+                        <hr>
+                        <li class="item-cloud">Plano family</li>
+                    </ul>
                 </li>
                 <li class="item-header">
                     <img src="SVG/bar-internet.svg" alt="" class="svg">
                     Planos
                 </li>
-                <li class="item-header">
-                    <img src="SVG/list.svg" alt="" class="svg-list">
-                </li>
             </ul>
+        </div>
+        <div id="side">
+            <div id="side-container">
+                <button id="prev">
+                    <img src="SVG/x.svg" alt="" id="svg-prev">
+                </button>
+                <ul id="sidebar">
+                    <li class="item-side">
+                        <img src="SVG/clound.svg" alt="" class="svg-side">
+                        Cloud Storage
+                    <li class="item-side">
+                        <img src="SVG/bar-internet.svg" alt="" class="svg-side">
+                        Planos
+                    </li>
+                </ul>
         </div>
     </header>
     <main id="principal">

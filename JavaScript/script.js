@@ -1,13 +1,25 @@
-function clicou(){
-    let menu = document.getElementById('menu');
-    let list = document.getElementById('menu-list')
-    if(menu.style.display == 'block'){
+const icon_cloud = document.querySelector('#nuvem')
+const list_cloud = document.querySelector('#cloud_storage_list')
+const side = document.querySelector('#side');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
 
-        menu.style.display = 'none'
-    } else {
-        menu.style.display = 'block';
-        list.style.flexDirection = 'column'
-        list.style.gap = '20px'
-        list.style.alignItems = 'center'
-    }
-}
+next.addEventListener('click', function(){
+    side.style.left = '0%'
+})
+
+prev.addEventListener('click', function(){
+    side.style.left = '-100%'
+})
+
+icon_cloud.addEventListener('mouseenter', function(){
+    list_cloud.style.display = 'flex'
+})
+
+list_cloud.addEventListener('mouseover', function(){
+    list_cloud.style.display = 'flex'
+})
+
+list_cloud.addEventListener('mouseout', function(){
+    list_cloud.style.display = 'none'
+})

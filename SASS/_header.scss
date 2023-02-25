@@ -5,13 +5,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-
+    position: relative;
     #list-header {
         list-style: none;
         display: flex;
         gap: 1.25em;
         align-items: center;
-
         .item-header {
             display: flex;
             flex-direction: column;
@@ -19,21 +18,109 @@
             align-items: center;
             cursor: pointer;
         }
-
         .svg-list {
             height: 30px;
             width: 30px;
             cursor: pointer;
+            display: none;
         }
     }
-
     .svg {
         width: 20px;
         height: 20px;
     }
-
     #logo-header {
         width: 30px;
         height: 30px;
+    }
+    #nuvem {
+        position: relative;
+    }
+    #cloud_storage_list {
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        background-color: $color-3;
+        padding: 2em;
+        width: 200px;
+        top: 110%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .item-cloud {
+            padding: 0.56em;
+        }
+    }
+    hr {
+        width: 100px;
+    }
+    #side {
+        background-color: $color-1;
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        width: 20vw;
+        padding: 3em;
+        z-index: 2;
+        #sidebar {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+        }
+        .item-side {
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .svg-side {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    #next {
+        display: none;
+        background-color: transparent;
+        border: none;
+        .svg-prev {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    #side-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #prev {
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    #svg-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    @include responsive(medium) {
+        #next {
+            display: block;
+        }
+        #itens-header {
+            display: none;
+        }
     }
 }

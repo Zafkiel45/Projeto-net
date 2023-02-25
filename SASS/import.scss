@@ -16,5 +16,14 @@ $color-3: #284878;
 $color-4: #fff;
 
 //Mexin
+$medium: 700px; 
+
+@mixin responsive($break) {
+    @if $break == medium {
+        @media (max-width: $medium) {
+            @content;
+        }
+    }
+}
 
 @import 'header';

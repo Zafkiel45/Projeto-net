@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+  position: relative;
 }
 #header #list-header {
   list-style: none;
@@ -33,6 +34,7 @@
   height: 30px;
   width: 30px;
   cursor: pointer;
+  display: none;
 }
 #header .svg {
   width: 20px;
@@ -41,4 +43,89 @@
 #header #logo-header {
   width: 30px;
   height: 30px;
+}
+#header #nuvem {
+  position: relative;
+}
+#header #cloud_storage_list {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  background-color: #284878;
+  padding: 2em;
+  width: 200px;
+  top: 110%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#header #cloud_storage_list .item-cloud {
+  padding: 0.56em;
+}
+#header hr {
+  width: 100px;
+}
+#header #side {
+  background-color: #081C4A;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  width: 20vw;
+  padding: 3em;
+  z-index: 2;
+}
+#header #side #sidebar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+#header #side .item-side {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#header #side .svg-side {
+  width: 40px;
+  height: 40px;
+}
+#header #next {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+#header #next .svg-prev {
+  width: 25px;
+  height: 25px;
+}
+#header #side-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#header #prev {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+#header #svg-prev {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 700px) {
+  #header #next {
+    display: block;
+  }
+  #header #itens-header {
+    display: none;
+  }
 }/*# sourceMappingURL=import.css.map */
