@@ -1,7 +1,9 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #principal {
@@ -29,6 +31,11 @@
   gap: 5px;
   align-items: center;
   cursor: pointer;
+  padding: 10px;
+}
+#header #list-header .item-header:hover {
+  background-color: #284878;
+  border-radius: 1.25em;
 }
 #header #list-header .svg-list {
   height: 30px;
@@ -97,6 +104,11 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 5px;
+}
+#header #side .item-side:hover {
+  background-color: #284878;
+  border-radius: 0.56em;
 }
 #header #side .svg-side {
   width: 40px;
@@ -175,4 +187,90 @@
   to {
     left: -100%;
   }
+}
+#principal {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+#principal #main-content {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+}
+#principal #main-content #descrição {
+  width: 400px;
+}
+#principal #main-content #descrição h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+#principal #main-content #descrição p {
+  text-align: justify;
+  line-height: 1.5em;
+}
+#principal #main-content #main-img {
+  width: 800px;
+}
+#principal #main-content #main-img #img-principal {
+  width: 100%;
+}
+#principal #cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #081C4A;
+  padding: 2em;
+}
+#principal #cards .cards-net {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.56em;
+  background-color: white;
+  color: darkgray;
+  padding: 1em;
+  border-radius: 1.25em;
+  height: 200px;
+}
+#principal #cards .cards-net .card-info {
+  line-height: 1.5em;
+}
+#principal #cards .cards-net .card-svg {
+  width: 40px;
+  height: 40px;
+}
+#principal #more-info {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+#principal #more-info #more-description {
+  text-align: justify;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+#principal #more-info #more-title-2 {
+  font-size: 1em;
+}
+#principal #more-info #more-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#principal #more-info #more-other {
+  width: 500px;
+  line-height: 1.5em;
+}
+#principal #more-info #more-img {
+  width: 500px;
+  height: 450px;
+}
+#principal #more-info #more-title {
+  font-size: 1.5em;
 }/*# sourceMappingURL=import.css.map */

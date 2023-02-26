@@ -1,0 +1,100 @@
+#principal {
+    display: flex;
+    color: white;
+    flex-direction: column;
+
+    #main-content {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        #descrição {
+            width: 400px;
+    
+            h1 {
+                font-weight: bold;
+                font-size: 3em;
+            }
+    
+            p {
+                text-align: justify;
+                line-height: 1.5em;
+            }
+        }
+    
+        #main-img {
+            width: 800px;
+    
+            #img-principal {
+                width: 100%;
+            }
+        }
+    }
+
+    #cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $color-1;
+        padding: 2em;
+        .cards-net {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.56em;
+            background-color: white;
+            color: darkgray;
+            padding: 1em;
+            border-radius: 1.25em;
+            height: 200px;
+
+            .card-info {
+                line-height: 1.5em;
+            }
+
+            .card-svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    #more-info {
+        display: flex;
+        width: 100%;
+        background-color: white;
+        color: black;
+        justify-content: space-around;
+        align-items: center;
+        #more-description {
+            text-align: justify;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        #more-title-2 {
+            font-size: 1em;
+        }
+
+        #more-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #more-other {
+            width: 500px;
+            line-height: 1.5em;
+        }
+
+        #more-img {
+            width: 500px;
+            height: 450px;
+        }
+
+        #more-title {
+            font-size: 1.5em;
+        }
+    }
+}
