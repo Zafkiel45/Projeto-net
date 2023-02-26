@@ -43,6 +43,10 @@
 #header #logo-header {
   width: 30px;
   height: 30px;
+  transition: 0.9s;
+}
+#header #logo-header:hover {
+  transform: scale(1.1);
 }
 #header #nuvem {
   position: relative;
@@ -74,9 +78,11 @@
   height: 100vh;
   top: 0;
   left: -100%;
-  width: 20vw;
-  padding: 3em;
+  width: 25vw;
+  padding: 1.5em;
   z-index: 2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #header #side #sidebar {
   list-style: none;
@@ -105,6 +111,10 @@
   width: 25px;
   height: 25px;
 }
+#header #next:active {
+  position: relative;
+  top: 2px;
+}
 #header #side-container {
   display: flex;
   justify-content: center;
@@ -113,9 +123,12 @@
 }
 #header #prev {
   background-color: transparent;
-  padding: 10px;
   border: none;
   margin-bottom: 20px;
+}
+#header #prev:active {
+  position: relative;
+  top: 2px;
 }
 #header #svg-prev {
   width: 30px;
@@ -127,5 +140,39 @@
   }
   #header #itens-header {
     display: none;
+  }
+}
+
+@-webkit-keyframes visible {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes visible {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@-webkit-keyframes hidden {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes hidden {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
   }
 }/*# sourceMappingURL=import.css.map */

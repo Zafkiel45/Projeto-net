@@ -32,10 +32,15 @@
     #logo-header {
         width: 30px;
         height: 30px;
+        transition: 0.9s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     #nuvem {
         position: relative;
     }
+    // Lista hidden 
     #cloud_storage_list {
         list-style: none;
         display: none;
@@ -57,15 +62,17 @@
     hr {
         width: 100px;
     }
+    // Sidebar
     #side {
         background-color: $color-1;
         position: absolute;
         height: 100vh;
         top: 0;
         left: -100%;
-        width: 20vw;
-        padding: 3em;
+        width: 25vw;
+        padding: 1.5em;
         z-index: 2;
+        animation-duration: 1s;
         #sidebar {
             list-style: none;
             display: flex;
@@ -94,6 +101,10 @@
             width: 25px;
             height: 25px;
         }
+        &:active {
+            position: relative;
+            top: 2px;
+        }
     }
 
     #side-container {
@@ -105,16 +116,17 @@
 
     #prev {
         background-color: transparent;
-        padding: 10px;
         border: none;
         margin-bottom: 20px;
+        &:active {
+            position: relative;
+            top: 2px;
+        }
     }
-
     #svg-prev {
         width: 30px;
         height: 30px;
     }
-
     @include responsive(medium) {
         #next {
             display: block;
@@ -123,4 +135,14 @@
             display: none;
         }
     }
+}
+
+@keyframes visible {
+    from{left: -100%}
+    to{left: 0%}
+}
+
+@keyframes hidden {
+    from{left: 0%}
+    to{left: -100%}
 }
