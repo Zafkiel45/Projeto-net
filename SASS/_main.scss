@@ -97,4 +97,28 @@
             font-size: 1.5em;
         }
     }
+
+    //Dúvidas
+
+    #duvidas {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25em;
+        align-items: center;
+        background-color: $color-1;
+        padding: 2em 0  ; 
+
+        h1 {
+            text-align: center;
+        }
+        .card-duvida {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-2;
+            width: 700px;
+            padding: 2em;
+            border-radius: 1.25em;
+        }
+    }
 }

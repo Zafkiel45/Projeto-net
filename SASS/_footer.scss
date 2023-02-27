@@ -1,0 +1,35 @@
+#rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-3;
+    padding: 1em 1em;
+    color: white;
+    
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            font-size: 1.5em;
+        }
+        #list-footer {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            font-size: 0.8em;
+            gap: 0.56em;
+
+            a {
+                &:link {
+                color: skyblue;
+            }
+        }
+        }
+    }
+
+    #coffe-footer {
+        width: 70px;
+        height: 70px;
+    }
+}
