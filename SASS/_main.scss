@@ -118,7 +118,31 @@
             background-color: $color-2;
             width: 700px;
             padding: 2em;
-            border-radius: 1.25em;
+            border-top-left-radius: 1.25em;
+            border-top-right-radius: 1.25em;
+
+        }
+
+        .button-click {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hidden-about {
+            display: none;
+            position: relative;
+            bottom: 35px;
+            width: 700px;
+            padding: 1.5em;
+            background-color: $color-3;
+            border-bottom-left-radius: 1.25em;
+            border-bottom-right-radius: 1.25em;
+
+            .hidden-about-text {
+                line-height: 1.5em;
+                text-align: justify;
+            }
         }
     }
 }
