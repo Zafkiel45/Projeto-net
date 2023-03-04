@@ -145,4 +145,81 @@
             }
         }
     }
+
+    @include responsive(large) {
+
+        #main-content {
+
+            #descrição {
+                width: 300px;
+                h1 {
+                    font-size: 2em;
+                }
+            }
+
+            #main-img {
+                width: 600px;
+            }
+        }
+    }
+    @include responsive(medium) {
+            #main-content {
+                #main-img {
+                    width: 450px;
+                }
+                #descrição {
+                    width: 200px;
+                    p{
+                        font-size: 14px;
+                    }
+
+                    h1 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            #more-info {
+                padding: 5px;
+                #more-img {
+                    height: 350px;
+                    width: 400px;
+                }
+                #more-description {
+                    width: 300px;
+                }
+                #more-other {
+                    width: 100%;
+                }
+        }
+    }
+    @include responsive(small) {
+        #duvidas {
+            display: none;
+        }
+        #more-info {
+            flex-direction: column;
+            #more-img {
+                width: 300px;
+                height: 250px;
+            }
+            #more-description {
+                padding: 10px;
+            }
+        }
+        #main-content {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+            #main-img {
+                width: 320px;
+            }
+        }
+        #cards {
+            flex-direction: column;
+            gap: 20px;
+            .cards-net {
+                width: 250px;
+            }
+        }
+    }
 }

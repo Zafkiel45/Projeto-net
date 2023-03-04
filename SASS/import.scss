@@ -7,6 +7,8 @@
 
 #principal {
     background-image: url(../image/gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 //Variáveis 
@@ -17,11 +19,22 @@ $color-3: #284878;
 $color-4: #fff;
 
 //Mexin
-$medium: 700px; 
+$large: 1024px;
+$medium: 768px;
+$small: 425px; 
 
 @mixin responsive($break) {
-    @if $break == medium {
+    @if $break == large {
+        @media (max-width: $large) {
+            @content;
+        }
+    }
+    @else if $break == medium {
         @media (max-width: $medium) {
+            @content;
+        }
+    } @else if $break == small {
+        @media (max-width: $small) {
             @content;
         }
     }

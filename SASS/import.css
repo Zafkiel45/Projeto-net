@@ -8,6 +8,8 @@
 
 #principal {
   background-image: url(../image/gradient.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #header {
@@ -146,7 +148,7 @@
   width: 30px;
   height: 30px;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #header #next {
     display: block;
   }
@@ -314,6 +316,74 @@
   line-height: 1.5em;
   text-align: justify;
 }
+@media (max-width: 1024px) {
+  #principal #main-content #descrição {
+    width: 300px;
+  }
+  #principal #main-content #descrição h1 {
+    font-size: 2em;
+  }
+  #principal #main-content #main-img {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  #principal #main-content #main-img {
+    width: 450px;
+  }
+  #principal #main-content #descrição {
+    width: 200px;
+  }
+  #principal #main-content #descrição p {
+    font-size: 14px;
+  }
+  #principal #main-content #descrição h1 {
+    font-size: 1.5em;
+  }
+  #principal #more-info {
+    padding: 5px;
+  }
+  #principal #more-info #more-img {
+    height: 350px;
+    width: 400px;
+  }
+  #principal #more-info #more-description {
+    width: 300px;
+  }
+  #principal #more-info #more-other {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  #principal #duvidas {
+    display: none;
+  }
+  #principal #more-info {
+    flex-direction: column;
+  }
+  #principal #more-info #more-img {
+    width: 300px;
+    height: 250px;
+  }
+  #principal #more-info #more-description {
+    padding: 10px;
+  }
+  #principal #main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  #principal #main-content #main-img {
+    width: 320px;
+  }
+  #principal #cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #principal #cards .cards-net {
+    width: 250px;
+  }
+}
 
 #rodape {
   display: flex;
@@ -344,4 +414,16 @@
 #rodape #coffe-footer {
   width: 70px;
   height: 70px;
+}
+@media (max-width: 425px) {
+  #rodape #coffe-footer {
+    width: 40px;
+    height: 40px;
+  }
+  #rodape .footer-div h2 {
+    font-size: 1em;
+  }
+  #rodape .footer-div #list-footer {
+    font-size: 0.6em;
+  }
 }/*# sourceMappingURL=import.css.map */
