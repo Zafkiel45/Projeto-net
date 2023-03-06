@@ -232,9 +232,11 @@
 }
 #principal #main-content #main-img {
   width: 800px;
+  height: 500px;
 }
 #principal #main-content #main-img #img-principal {
   width: 100%;
+  height: 100%;
 }
 #principal #cards {
   display: flex;
