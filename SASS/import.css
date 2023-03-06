@@ -155,6 +155,24 @@
   #header #itens-header {
     display: none;
   }
+  #header #side {
+    width: 30vw;
+  }
+  #header #side .item-side {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 425px) {
+  #header #side {
+    width: 35vw;
+  }
+  #header #side .svg-side {
+    width: 30px;
+    height: 30px;
+  }
+  #header #side .item-side {
+    font-size: 0.8em;
+  }
 }
 
 @-webkit-keyframes visible {

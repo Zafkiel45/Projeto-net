@@ -144,6 +144,25 @@
         #itens-header {
             display: none;
         }
+        #side {
+            width: 30vw;
+            .item-side {
+                font-size: 0.8em;
+            }
+        }
+    }
+    @include responsive(small) {
+            
+        #side {
+            width: 35vw;
+            .svg-side {
+                width: 30px;
+                height: 30px;
+            }
+            .item-side {
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
